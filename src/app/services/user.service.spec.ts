@@ -15,6 +15,10 @@ describe('UserService', () => {
 		httpTestController = TestBed.inject(HttpTestingController);
   });
 
+	afterEach(() => {
+		httpTestController.verify();
+	});
+
   it('should be created', () => {
     expect(userService).toBeTruthy();
   });
