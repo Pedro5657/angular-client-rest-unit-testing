@@ -17,7 +17,6 @@ import { User } from './services/user';
 			}
 		</ul>
 	`,
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
 	users: User[] = [];
